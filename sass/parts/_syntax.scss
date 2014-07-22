@@ -42,20 +42,23 @@ $solarized: light !default;
 $pre-bg: #EDEDC0;
 $pre-border: $color-gray03;
 
+$listing-font-size: 0.7em;
+$inline-font-size: 0.5em;
+
 article{
+  div.entry-content p code{ # inline code
+      font-size: $inline-font-size;
+  }
 	code, pre{
 		background: $pre-bg;
 		border: 1px solid $pre-border;
-		font-family: $font-mono;
 	}
 	code{
 		padding: 1px 3px;
-    font-size: 15px;
 		margin: 0 3px;
 		@include border-radius(5px);
 	}
-	pre{
-		font-size: 0.7em;
+	pre{ 
 		line-height: 1.5;
 		margin-top: 10px;
 		padding: 5px 15px;
@@ -107,7 +110,11 @@ figure.code{
 	td.code{
 		width: 100%;
 		padding-left: 15px;
+    font-size: $listing-font-size;
 	}
+  td.gutter {
+    font-size: $listing-font-size;
+  }
 }
 .entry-content .gist{
 	background: $pre-bg;
