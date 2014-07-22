@@ -49,13 +49,13 @@ article{
 		font-family: $font-mono;
 	}
 	code{
-		font-size: 0.6em;
 		padding: 1px 3px;
+    font-size: 15px;
 		margin: 0 3px;
 		@include border-radius(5px);
 	}
 	pre{
-		font-size: 1 / 0.9em;
+		font-size: 0.7em;
 		line-height: 1.5;
 		margin-top: 10px;
 		padding: 5px 15px;
@@ -139,7 +139,7 @@ figure.code{
 			background: none;
 			border: none;
 			pre{
-				font: 0.9em $font-mono;
+				font: 0.7em $font-mono;
 				line-height: 1.5;
 			}
 		}
