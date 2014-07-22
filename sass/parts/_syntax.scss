@@ -43,10 +43,10 @@ $pre-bg: #EDEDC0;
 $pre-border: $color-gray03;
 
 $listing-font-size: 0.7em;
-$inline-font-size: 0.5em;
+$inline-font-size: 0.6em;
 
 article{
-  div.entry-content p code{ # inline code
+  div.entry-content p code{
       font-size: $inline-font-size;
   }
 	code, pre{
